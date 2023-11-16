@@ -9,7 +9,7 @@ import '../repositories/contact_page_repository.dart';
 class SubmitContactPageUseCase implements UseCase<bool, Params> {
   final ContactPageRepository repository;
 
-  SubmitContactPageUseCase(this.repository);
+  SubmitContactPageUseCase({required this.repository});
 
   @override
   Future<Either<Failure, bool>> call(Params params) async {
