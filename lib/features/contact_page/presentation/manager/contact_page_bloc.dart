@@ -31,7 +31,7 @@ class ContactPageBloc extends Bloc<ContactPageEvent, ContactPageState> {
         ),
       ),
       (r) => emit(
-        const ContactPageSuccessState(serverSuccessMessage),
+        const ContactPageSuccessState(AppTexts.serverSuccessMessage),
       ),
     );
   }

@@ -4,8 +4,8 @@ import 'failures.dart';
 String mapFailureToMessage(Failure failure) {
   switch (failure.runtimeType) {
     case ServerFailure:
-      return serverErrorMessage;
+      return AppTexts.serverErrorMessage;
     default:
-      return defaultErrorMessage;
+      return AppTexts.defaultErrorMessage;
   }
 }

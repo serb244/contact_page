@@ -2,6 +2,7 @@ part of 'contact_page_bloc.dart';
 
 abstract class ContactPageState extends Equatable {
   const ContactPageState();
+  String? get message => null;
 }
 
 class ContactPageInitialState extends ContactPageState {
@@ -15,6 +16,7 @@ class ContactPageLoadingState extends ContactPageState {
 }
 
 class ContactPageSuccessState extends ContactPageState {
+  @override
   final String message;
 
   const ContactPageSuccessState(this.message);
@@ -24,6 +26,7 @@ class ContactPageSuccessState extends ContactPageState {
 }
 
 class ContactPageErrorState extends ContactPageState {
+  @override
   final String message;
 
   const ContactPageErrorState(this.message);
